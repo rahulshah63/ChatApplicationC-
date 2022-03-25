@@ -1,27 +1,19 @@
-## `Chat System Over a Local Network`
+#### `Chat System Over a Local Network`
 
-*This project is very simple to compile and run as there is no need of any additional library to be added in order to run this project successfully.*
+##### *This is a c++ and networking project where we can create a local area network(LAN) to communicate over the network using sockets.*
 ---
-##### Inside the source code folder, you will find two files : 
-- one ServerSource 
-- another ClientSource
+##### Inside this folder, you will find two folder : 
+- ChatOverLan-console
 ```
-Just create a new visual studios project for console application and add the ServerSource.cpp file in 
-its Source Files section and run the project in order to start the server.
+Create a new visual studios project for console application and add the ServerSource.cpp and 
+ClientSource.cpp file in its Source Files section and run the project in order to start the server.
+PS: It require no additional library to compile and run.
 ```
+- wxWidget-Gui 
 ```
-Now, for the side of the client, follow similar method as for the server including ClientSource.cpp file.
-But here in the ClientSource.cpp file, you will need to make some changes as per your network.
+Create a new wxWidget project and add all file then start myApp.cpp
+PS: It require wxWidget library package for C++ to compile.
 ```
-### Steps
-```
-1. First be sure to connect the server and the client computer in the same Network.
-2. Find the ipAddress string in send() and receive() function in ClientSource.cpp and change it to the ipAddress(Ipv4) of the server computer.
-3. If you are running the server and client in the same device then keep the ipAdderss string "127.0.0.1" which signifies the local host.
-4. First run the server and then run the clients(you are able to connect as many clients as you want).
-5. In the client side you will see a message saying "Welcome to awesome client server.", then you press enter to get an option to enter your username.
-   After you enter the username then all the clients connected on the server will see a message saying "(username) has joined the chat".
-   Now you can chat in this system.To exit the system simply type "terminate" and press enter.
-```
-#### Thank You!
+
+##### Thank You!
  
